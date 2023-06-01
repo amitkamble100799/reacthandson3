@@ -19,7 +19,7 @@ export default class App extends Component {
     this.setState({[event.target.rating]:event.target.value})
   }
 
-  changePage = ()=>{
+  togglefunction= ()=>{
     this.setState({click: !this.state.click})
   }
 
@@ -60,7 +60,7 @@ export default class App extends Component {
     <button className='btn1' onClick={this.handleClick}>Submit</button>
 </>
     :
-    <Nextpage value={this.state.data} render={this.changePage}/>
+    <Nextpage value={this.state.data} tf={this.togglefunction}/>
   }
   </>    
     )
