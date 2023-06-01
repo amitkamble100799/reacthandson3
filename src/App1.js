@@ -24,7 +24,7 @@ class Nextpage extends Component {
           })      
           }
         </div>
-        <button  className='btn2' onClick={this.props.render}>GO BACK</button>
+        <button  className='btn2' onClick={this.props.tf}>GO BACK</button>
         </>
     )
   }
